@@ -21,7 +21,7 @@ pipeline {
         stage('Code QA Execution') {
             steps {
                 echo 'Running JUnit Test Cases...'
-                sh 'mvn clean prasad'
+                sh 'mvn clean satyam'
                 echo 'JUnit Test Cases Completed Successfully!'
             }
         }
@@ -31,6 +31,6 @@ pipeline {
                 sh 'mvn clean package'
                 echo 'JAR Artifact Created Successfully!'
             }
-        }
-    }
+        }
+    }
 }
